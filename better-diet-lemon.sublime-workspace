@@ -1,0 +1,341 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/muchu1983/桌面/py_work/better-diet-lemon/better-diet-lemon.sublime-project",
+			"settings":
+			{
+				"buffer_size": 88,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"terminus",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"term",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git:pull",
+				"git: pull"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"package control",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 190.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/muchu1983/桌面/py_work/better-diet-lemon"
+	],
+	"file_history":
+	[
+		"/home/muchu1983/桌面/py_work/better-diet-lemon/better-diet-lemon.sublime-project",
+		"/home/muchu1983/桌面/py_work/better-diet-lemon/pyproject.toml",
+		"/home/muchu1983/Desktop/py_work/vanguard_report_modifier/vrm.py",
+		"/home/muchu1983/桌面/先鋒筆記_2025-11-19.txt",
+		"/home/muchu1983/Desktop/先鋒保全筆記_2025-11-19.txt",
+		"/media/muchu1983/PASS/bennu_obsidian/Crypto_2024-03-06.mdenc",
+		"/home/muchu1983/flake8setting",
+		"/home/muchu1983/桌面/記事本.txt",
+		"/home/muchu1983/桌面/先鋒保全筆記0617.txt",
+		"/home/muchu1983/.config/sublime-text/Packages/Hungry Backspace/README.md",
+		"/home/muchu1983/Desktop/py_work/vanguard_report_modifier/pipenv.sublime-build",
+		"/home/muchu1983/Desktop/py_work/vanguard_report_modifier/vrm/line_wrapper.py",
+		"/home/muchu1983/Desktop/py_work/vanguard_report_modifier/tasks.py",
+		"/home/muchu1983/.config/sublime-text/Packages/ConvertToUTF8/ConvertToUTF8.sublime-settings",
+		"/home/muchu1983/.config/sublime-text/Packages/User/ConvertToUTF8.sublime-settings",
+		"/home/muchu1983/Desktop/py_work/vanguard_report_modifier/vrm/txt_wrapper.py",
+		"/home/muchu1983/Desktop/py_work/vanguard_report_modifier/bennu.sublime-build",
+		"/home/muchu1983/Desktop/py_work/vanguard_report_modifier/vrm/__init__.py",
+		"/home/muchu1983/.config/sublime-text/Packages/User/bennu.sublime-build",
+		"/home/muchu1983/Desktop/py_work/vanguard_report_modifier/README.md",
+		"/home/muchu1983/Desktop/py_work/vanguard_report_modifier/Pipfile",
+		"/home/muchu1983/桌面/先鋒保全/各式表格/大立金盾客户處理部分.txt",
+		"/home/muchu1983/桌面/無聊知識/tutorial.scilla",
+		"/home/muchu1983/.config/sublime-text/Packages/User/Localization.sublime-settings",
+		"/home/muchu1983/Desktop/py_work/vanguard_report_modifier/vrm.sublime-project"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"千星奇域",
+			"build_linux"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/muchu1983/桌面/py_work/better-diet-lemon/better-diet-lemon.sublime-project",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 88,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"show_definitions": true,
+							"syntax": "Packages/zzz A File Icon/aliases/JSON (Sublime).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.Terminus":
+	{
+		"height": 135.0,
+		"history":
+		[
+		]
+	},
+	"output.exec":
+	{
+		"height": 80.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "Packages/User/pipenv.sublime-build",
+	"project": "better-diet-lemon.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"lsp_show_hover_popups": false,
+		"lsp_show_inlay_hints": false
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 230.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
