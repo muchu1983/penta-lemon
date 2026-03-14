@@ -4,9 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "better-diet-lemon"
-version = "0.1.0"
+version = "2026.03.14.0"
 requires-python = ">=3.13"
 authors = [{ name="muchu hsu", email="muchu1983@gmail.com" }]
+description = "膳易灵萌"
+readme = "README.md"
+license = {file = "LICENSE"}
 
 [project.scripts]
 better-diet-lemon = "better_diet_lemon.main:main"
