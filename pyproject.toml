@@ -6,7 +6,10 @@ build-backend = "setuptools.build_meta"
 name = "better-diet-lemon"
 version = "2026.03.14.0"
 requires-python = ">=3.13"
-authors = [{ name="muchu hsu", email="muchu1983@gmail.com" }]
+authors = [
+	{ name="Mu Chu Hsu"}, 
+	{email="muchu1983@gmail.com" },
+	{email="muchu1983@outlook.com" }]
 description = "膳易灵萌"
 readme = "README.md"
 license = "MIT"
