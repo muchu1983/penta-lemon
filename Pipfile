@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 build = "*"
 pyinstaller = "*"
+pyside6 = "*"
 
 [dev-packages]
 
