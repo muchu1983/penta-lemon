@@ -1,2 +1,2 @@
-# better-diet-lemon
+# penta-lemon
 膳易柠檬，1菜1爻，3菜成卦，喂食桌宠，易经，温热冷凉
