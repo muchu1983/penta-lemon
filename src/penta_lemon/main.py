@@ -22,7 +22,7 @@ class MyWidget(QtWidgets.QWidget):
     def magic(self):
         self.text.setText(random.choice(self.hello))
 
-if __name__ == "__main__":
+def main():
     app = QtWidgets.QApplication([])
 
     widget = MyWidget()
@@ -30,3 +30,6 @@ if __name__ == "__main__":
     widget.show()
 
     sys.exit(app.exec())
+
+if __name__ == "__main__":
+    main()
