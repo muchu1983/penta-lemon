@@ -1,32 +1,5 @@
 from enum import Enum
 """核心类"""
-class XxxvObj:
-    """爻物：万物分阴阳"""
-    def __init__(self):
-        self.xxxv = Const.XxxvEnum.OLD_BDEM
-
-class Yyp:
-    """卦：六爻成卦"""
-    def __init__(self):
-        self.sixXxxv = [] #六爻
-
-    def append_xxxv(self, xxxv_obj):
-        if len(self.sixXxxv) < 6:
-            self.sixXxxv.append(xxxv_obj)
-        else:
-            self.sixXxxv.clear() #清空重来
-            self.sixXxxv.append(xxxv_obj)
-        
-class PentaMiri:
-    """五行"""
-    def __init__(self):
-        pass
-
-class Lemon:
-    """柠檬"""
-    def __init__(self):
-        pass
-
 class Const:
     """常数"""
     class XxxvEnum(Enum):
@@ -44,7 +17,48 @@ class Const:
         FIRE = "火"
         EARTH = "土"
 
+class XxxvObj:
+    """爻物：万物分阴阳"""
+    def __init__(self, xxxv:Const.XxxvEnum):
+        self.xxxv = xxxv
+
+class Yyp:
+    """卦：六爻成卦"""
+    def __init__(self):
+        self.sixXxxv = [] #六爻
+
+    def append_xxxv(self, xxxv_obj):
+        if len(self.sixXxxv) >= 6:
+            self.sixXxxv.clear() #清空重来
+        self.sixXxxv.append(xxxv_obj)
+        print(self.sixXxxv)
+    
+    def isCompleted(self):
+        return True if len(self.sixXxxv) == 6 else False
+        
+class PentaMiri:
+    """五行：64卦归宫五行"""
+    def __init__(self):
+        self.pentaMiri = None
+
+    def assignYypToPentaMiri(self, yyp):
+        if yyp.isCompleted():
+            self.pentaMiri = Const.PentaMiriEnum.FIRE
+        else:
+            self.pentaMiri = None
+        print(self.pentaMiri)
+
+class Lemon:
+    """柠檬"""
+    def __init__(self):
+        self.yyp = Yyp()
+        self.pentaMiri = PentaMiri()
+
+    def feed(self, food):
+        self.yyp.append_xxxv(food)
+        self.pentaMiri.assignYypToPentaMiri(self.yyp)
+
 if __name__ == "__main__":
-    yyp = Yyp()
-    for i in range(10):
-        yyp.append_xxxv(XxxvObj())
+    lemon = Lemon()
+    for i in range(13):
+        lemon.feed(XxxvObj(Const.XxxvEnum.OLD_BDEM))
