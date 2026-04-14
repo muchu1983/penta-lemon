@@ -45,7 +45,9 @@ class PentaMiri:
             self.pentaMiri = Const.PentaMiriEnum.FIRE
         else:
             self.pentaMiri = None
-        print(self.pentaMiri)
+
+    def getPentaMiri(self):
+        return self.pentaMiri
 
 class Lemon:
     """柠檬"""
@@ -56,3 +58,6 @@ class Lemon:
     def feed(self, food):
         self.yyp.append_xxxv(food)
         self.pentaMiri.assignYypToPentaMiri(self.yyp)
+
+    def getPentaMiri(self):
+        return self.pentaMiri
