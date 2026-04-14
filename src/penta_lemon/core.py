@@ -56,8 +56,3 @@ class Lemon:
     def feed(self, food):
         self.yyp.append_xxxv(food)
         self.pentaMiri.assignYypToPentaMiri(self.yyp)
-
-if __name__ == "__main__":
-    lemon = Lemon()
-    for i in range(13):
-        lemon.feed(XxxvObj(Const.XxxvEnum.OLD_BDEM))
