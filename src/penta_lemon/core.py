@@ -31,7 +31,6 @@ class Yyp:
         if len(self.sixXxxv) >= 6:
             self.sixXxxv.clear() #清空重来
         self.sixXxxv.append(xxxv_obj)
-        print(self.sixXxxv)
     
     def isCompleted(self):
         return True if len(self.sixXxxv) == 6 else False
