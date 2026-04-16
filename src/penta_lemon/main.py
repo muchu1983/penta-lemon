@@ -1,6 +1,7 @@
 import sys
 import random
 from PySide6 import QtCore, QtWidgets, QtGui
+from penta_lemon.core import Const
 
 class MyWidget(QtWidgets.QWidget):
     def __init__(self):
@@ -23,12 +24,12 @@ class MyWidget(QtWidgets.QWidget):
         self.text.setText(random.choice(self.hello))
 
 def main():
-    app = QtWidgets.QApplication([])
+    print(Const.XxxvCode.OLD_BAYT) #test import
 
+    app = QtWidgets.QApplication([])
     widget = MyWidget()
     widget.resize(800, 600)
     widget.show()
-
     sys.exit(app.exec())
 
 if __name__ == "__main__":
