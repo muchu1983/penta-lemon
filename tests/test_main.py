@@ -1,5 +1,5 @@
 import unittest
-from src.penta_lemon.main import main
+from penta_lemon.main import main
 
 class TestMain(unittest.TestCase):
 
