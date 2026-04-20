@@ -25,20 +25,20 @@
         },
         "build": {
             "hashes": [
-                "sha256:35b14e1ee329c186d3f08466003521ed7685ec15ecffc07e68d706090bf161d1",
-                "sha256:7a4d8651ea877cb2a89458b1b198f2e69f536c95e89129dbf5d448045d60db88"
+                "sha256:1bc22b19b383303de8f2c8554c9a32894a58d3f185fe3756b0b20d255bee9a38",
+                "sha256:5aa4231ae0e807efdf1fd0623e07366eca2ab215921345a2e38acdd5d0fa0a74"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.9'",
-            "version": "==1.4.2"
+            "version": "==1.4.3"
         },
         "packaging": {
             "hashes": [
-                "sha256:00243ae351a257117b6a241061796684b084ed1c516a08c48a3f7e147a9d80b4",
-                "sha256:b36f1fef9334a5588b4166f8bcd26a14e521f2b55e6b9de3aaa80d3ff7a37529"
+                "sha256:5d9c0669c6285e491e0ced2eee587eaf67b670d94a19e94e3984a481aba6802f",
+                "sha256:f042152b681c4bfac5cae2742a55e103d27ab2ec0f3d88037136b6bfe7c9c5de"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==26.0"
+            "version": "==26.1"
         },
         "pyinstaller": {
             "hashes": [
@@ -61,11 +61,11 @@
         },
         "pyinstaller-hooks-contrib": {
             "hashes": [
-                "sha256:5ecd1068ad262afecadf07556279d2be52ca93a88b049fae17f1a2eb2969254a",
-                "sha256:800d3a198a49a6cd0de2d7fb795005fdca7a0222ed9cb47c0691abd1c27b9310"
+                "sha256:1de1a5e49a878122010b88c7e295502bc69776c157c4a4dc78741a4e6178b00f",
+                "sha256:766c281acb1ecc32e21c8c667056d7ebf5da0aabd5e30c219f9c2a283620eeaa"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==2026.3"
+            "version": "==2026.4"
         },
         "pyproject-hooks": {
             "hashes": [
