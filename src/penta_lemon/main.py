@@ -1,7 +1,7 @@
 import sys
 import random
 from PySide6 import QtCore, QtWidgets, QtGui
-from penta_lemon.core import Const
+from penta_lemon.const import Const
 
 class MyWidget(QtWidgets.QWidget):
     def __init__(self):

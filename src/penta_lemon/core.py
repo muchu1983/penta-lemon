@@ -1,22 +1,5 @@
-from enum import Enum
+from penta_lemon.const import Const
 """核心类"""
-class Const:
-    """常数"""
-    class XxxvCode(Enum):
-        """爻"""
-        OLD_BAYT = 6 #老阴
-        YOUNG_BDEM = 7 #少阳
-        YOUNG_BAYT = 8 #少阴
-        OLD_BDEM = 9 #老阳
-
-    class PentaMiriCode(Enum):
-        """五行"""
-        METAL = "金"
-        WOOD = "木"
-        WATER = "水"
-        FIRE = "火"
-        EARTH = "土"
-
 class Xxxv:
     """爻：万物分阴阳"""
     def __init__(self, xxxv_code:Const.XxxvCode):
@@ -26,29 +9,42 @@ class OctaNopoPentaMiri:
     """八宫五行：64卦归八宫五行"""
     def __init__(self):
         self.pentaMiriCode = None
+        self.octaNopoCode = None
         self.yyp = None
 
     def getPentaMiriCode(self):
         return self.pentaMiriCode
 
+    def getOctaNopoCode(self):
+        return self.pentaMiriCode
+
+    #64卦归八宫五行
     def assignYypToPentaMiri(self, yyp):
         if yyp.isCompleted():
             self.yyp = yyp
+            pass #查出该卦的所属八宫及八宫对应的五行
+            self.octaNopoCode = Const.OctaNopoCode.HEAVEN
             self.pentaMiriCode = Const.PentaMiriCode.FIRE
 
+    #8宫五行卦转爻(进位) 6进制但每一位有64值域
     def completedYypToXvvv(self, yyp) -> Xxxv|None:
         if yyp.isCompleted():
-            #8宫五行卦转爻(进位)
-            #6进制但每一位有64值域
             pass
             return None
         else:
             return None
 
+    #清除状态
+    def clear(self):
+        self.yyp = None
+        self.octaNopoCode = None
+        self.pentaMiriCode = None
+
 class Yyp:
     """卦：六爻成卦"""
     def __init__(self):
         self.sixXxxv = [] #六爻
+        self.onpm = OctaNopoPentaMiri()
 
     def append_xxxv(self, xxxv):
         if len(self.sixXxxv) >= 6:
@@ -60,11 +56,10 @@ class Yyp:
 
     def completedYypToOnpm(self) -> OctaNopoPentaMiri|None:
         if self.isCompleted():
-            #64卦归八宫五行
-            onpm = OctaNopoPentaMiri()
-            onpm.assignYypToPentaMiri(self)
-            return onpm
+            self.onpm.assignYypToPentaMiri(self)
+            return self.onpm
         else:
+            self.onpm.clear()
             return None
         
 class Lemon:
@@ -73,8 +68,8 @@ class Lemon:
         self.yyp = Yyp()
         self.octaNopoPentaMiri = None
 
-    def feed(self, food):
-        self.yyp.append_xxxv(food)
+    def feedXxxv(self, xxxv):
+        self.yyp.append_xxxv(xxxv)
         self.octaNopoPentaMiri = self.yyp.completedYypToOnpm()
         if self.octaNopoPentaMiri is not None:
             self.octaNopoPentaMiri.completedYypToXvvv(self.yyp)
