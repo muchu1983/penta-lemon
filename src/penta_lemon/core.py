@@ -18,9 +18,32 @@ class Const:
         EARTH = "土"
 
 class Xxxv:
-    """爻物：万物分阴阳"""
+    """爻：万物分阴阳"""
     def __init__(self, xxxv_code:Const.XxxvCode):
         self.xxxvCode = xxxv_code
+
+class OctaNopoPentaMiri:
+    """八宫五行：64卦归八宫五行"""
+    def __init__(self):
+        self.pentaMiriCode = None
+        self.yyp = None
+
+    def getPentaMiriCode(self):
+        return self.pentaMiriCode
+
+    def assignYypToPentaMiri(self, yyp):
+        if yyp.isCompleted():
+            self.yyp = yyp
+            self.pentaMiriCode = Const.PentaMiriCode.FIRE
+
+    def completedYypToXvvv(self, yyp) -> Xxxv|None:
+        if yyp.isCompleted():
+            #8宫五行卦转爻(进位)
+            #6进制但每一位有64值域
+            pass
+            return None
+        else:
+            return None
 
 class Yyp:
     """卦：六爻成卦"""
@@ -34,42 +57,27 @@ class Yyp:
     
     def isCompleted(self):
         return True if len(self.sixXxxv) == 6 else False
+
+    def completedYypToOnpm(self) -> OctaNopoPentaMiri|None:
+        if self.isCompleted():
+            #64卦归八宫五行
+            onpm = OctaNopoPentaMiri()
+            onpm.assignYypToPentaMiri(self)
+            return onpm
+        else:
+            return None
         
-class PentaMiri:
-    """五行：64卦归宫五行8宫"""
-    def __init__(self):
-        self.pentaMiriCode = None
-        self.yyp = None
-
-    def assignYypToPentaMiri(self, yyp):
-        self.yyp = yyp
-        if yyp.isCompleted():
-            #64卦归8宫五行
-            self.pentaMiriCode = Const.PentaMiriCode.FIRE
-        else:
-            self.pentaMiriCode = None
-
-    def convertPentaMiriToXvvv(self, yyp):
-        if yyp.isCompleted():
-            #8宫五行卦转爻(进位)
-            #6进制但每一位有64值域
-            pass
-        else:
-            pass
-
-    def getPentaMiriCode(self):
-        return self.pentaMiriCode
-
 class Lemon:
     """柠檬"""
     def __init__(self):
         self.yyp = Yyp()
-        self.pentaMiri = PentaMiri()
+        self.octaNopoPentaMiri = None
 
     def feed(self, food):
         self.yyp.append_xxxv(food)
-        self.pentaMiri.assignYypToPentaMiri(self.yyp)
-        self.pentaMiri.convertPentaMiriToXvvv(self.yyp)
+        self.octaNopoPentaMiri = self.yyp.completedYypToOnpm()
+        if self.octaNopoPentaMiri is not None:
+            self.octaNopoPentaMiri.completedYypToXvvv(self.yyp)
 
-    def getPentaMiri(self):
-        return self.pentaMiri
+    def getOctaNopoPentaMiri(self):
+        return self.octaNopoPentaMiri
