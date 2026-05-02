@@ -12,7 +12,7 @@ class TestCore(unittest.TestCase):
             self.assertIsNone(self.lemon.getPentaMiri().getPentaMiriCode())
         self.lemon.feed(Xxxv(Const.XxxvCode.OLD_BDEM)) #第六爻
         self.assertIsNotNone(self.lemon.getPentaMiri().getPentaMiriCode())
-        self.lemon.feed(Xxxv(Const.XxxvCode.OLD_BDEM)) #第七爻(重置)
+        self.lemon.feed(Xxxv(Const.XxxvCode.OLD_BDEM)) #第六+1爻(重置)
         self.assertIsNone(self.lemon.getPentaMiri().getPentaMiriCode())
 
 if __name__ == "__main__":

@@ -36,7 +36,7 @@ class Yyp:
         return True if len(self.sixXxxv) == 6 else False
         
 class PentaMiri:
-    """五行：64卦归宫五行"""
+    """五行：64卦归宫五行8宫"""
     def __init__(self):
         self.pentaMiriCode = None
         self.yyp = None
@@ -44,9 +44,18 @@ class PentaMiri:
     def assignYypToPentaMiri(self, yyp):
         self.yyp = yyp
         if yyp.isCompleted():
+            #64卦归8宫五行
             self.pentaMiriCode = Const.PentaMiriCode.FIRE
         else:
             self.pentaMiriCode = None
+
+    def convertPentaMiriToXvvv(self, yyp):
+        if yyp.isCompleted():
+            #8宫五行卦转爻(进位)
+            #6进制但每一位有64值域
+            pass
+        else:
+            pass
 
     def getPentaMiriCode(self):
         return self.pentaMiriCode
@@ -60,6 +69,7 @@ class Lemon:
     def feed(self, food):
         self.yyp.append_xxxv(food)
         self.pentaMiri.assignYypToPentaMiri(self.yyp)
+        self.pentaMiri.convertPentaMiriToXvvv(self.yyp)
 
     def getPentaMiri(self):
         return self.pentaMiri
