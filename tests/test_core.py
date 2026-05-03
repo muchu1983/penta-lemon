@@ -25,7 +25,7 @@ class TestCore(unittest.TestCase):
         self.assertIsNotNone(self.lemon_list[0].getOctaNopoPentaMiri().getOctaNopoCode())
         self.lemon_list.append(Lemon())
         self.lemon_list[1].feedXxxv(self.lemon_list[0].getOctaNopoPentaMiri().completedYypToXvvv())
-        self.assertIsNotNone(self.lemon_list[1].getYyp().getSixXxxvList()[0])
+        self.assertIsNotNone(self.lemon_list[1].yyp.sixXxxv[0])
 
 if __name__ == "__main__":
     unittest.main()
