@@ -5,6 +5,9 @@ class Xxxv:
     def __init__(self, xxxv_code:Const.XxxvCode):
         self.xxxvCode = xxxv_code
 
+    def getXxxvCode(self):
+        return self.xxxvCode
+
 class OctaNopoPentaMiri:
     """八宫五行：64卦归八宫五行"""
     def __init__(self):
@@ -27,10 +30,10 @@ class OctaNopoPentaMiri:
             self.pentaMiriCode = Const.PentaMiriCode.FIRE
 
     #8宫五行卦转爻(进位) 6进制但每一位有64值域
-    def completedYypToXvvv(self, yyp) -> Xxxv|None:
-        if yyp.isCompleted():
+    def completedYypToXvvv(self) -> Xxxv|None:
+        if self.yyp.isCompleted():
             pass
-            return None
+            return Xxxv(Const.XxxvCode.YOUNG_BDEM)
         else:
             return None
 
@@ -45,6 +48,9 @@ class Yyp:
     def __init__(self):
         self.sixXxxv = [] #六爻
         self.onpm = OctaNopoPentaMiri()
+
+    def getSixXxxvList(self):
+        return self.sixXxxv
 
     def append_xxxv(self, xxxv):
         if len(self.sixXxxv) >= 6:
@@ -72,7 +78,10 @@ class Lemon:
         self.yyp.append_xxxv(xxxv)
         self.octaNopoPentaMiri = self.yyp.completedYypToOnpm()
         if self.octaNopoPentaMiri is not None:
-            self.octaNopoPentaMiri.completedYypToXvvv(self.yyp)
+            self.octaNopoPentaMiri.completedYypToXvvv()
 
     def getOctaNopoPentaMiri(self):
         return self.octaNopoPentaMiri
+
+    def getYyp(self):
+        return self.yyp

@@ -24,8 +24,6 @@ class MyWidget(QtWidgets.QWidget):
         self.text.setText(random.choice(self.hello))
 
 def main():
-    print(Const.XxxvCode.OLD_BAYT) #test import
-
     app = QtWidgets.QApplication([])
     widget = MyWidget()
     widget.resize(800, 600)
